@@ -4,7 +4,8 @@ Telegram bot for posting new content items to website created by great static si
 ## Steps to make it work
 1. [Create website with Hugo](https://gohugo.io/getting-started/quick-start/) or clone from [here](https://github.com/oleksiy-os/hugo-demo) 
 2. For created site copy/edit rule from [here](https://github.com/oleksiy-os/hugo-demo/blob/main/archetypes/posts.md). It creates new article from json file inside "data/externalPost/".
-3. Build go bin and put it to the website root
+3. Rename `config-sample.json` to `config-sample.json`, [create tg bot](https://core.telegram.org/bots/api#authorizing-your-bot) & add token
+4. Build go bin, put it & config.json to the hugo website root
 
 
 ## How it works
