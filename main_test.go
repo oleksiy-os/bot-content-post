@@ -38,3 +38,5 @@ func TestNewConfig(t *testing.T) {
 		})
 	}
 }
+
+// TODO tests with bot API

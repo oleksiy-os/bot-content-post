@@ -136,7 +136,7 @@ func (a *Article) Post() error {
 }
 
 // createWebPage create page with HUGO cli
-// command create article with hugo cli "hugo new posts/post6.md"
+// command create article with hugo cli "hugo new posts/<title-name>.md"
 // in folder archetypes/posts.md has snippet
 // to detect file in data/externalPost/<title-name>.json and create new article
 func createWebPage(article *Article) error {
