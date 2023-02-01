@@ -6,6 +6,7 @@ import (
 	"fmt"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	log "github.com/sirupsen/logrus"
+	"html"
 	"io"
 	"os"
 	"os/exec"
@@ -219,7 +220,7 @@ func handleAddCommand(update *tgbotapi.Update, msg *tgbotapi.MessageConfig, add 
 		)
 
 		if add.Title == "" {
-			add.Title = add.ChatText
+			add.Title = html.EscapeString(add.ChatText)
 			msg.Text = "Please write Post description:"
 			return
 		}
